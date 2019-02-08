@@ -1,0 +1,75 @@
+:root {
+  --my-grey: #111;
+  --background-code: #ADD8E6;
+}
+body {
+  display: grid;  
+  grid-template-rows: auto auto;
+}
+nav {
+  margin-top: 25px;
+}
+ul {
+  margin-bottom: 10px;
+}
+ul li {
+  padding: 2px 5px 2px 0;
+  margin-bottom: 10px;
+  font-size: 140%;
+}
+nav ul li {
+  list-style: none;
+  font-size: 160%; 
+  border-bottom: 1px solid var(--my-grey);
+}
+nav ul {
+  width: auto;
+  height: 10em;
+  overflow: auto; 
+}
+nav ul li a {
+  text-decoration: none;
+  color: var(--my-grey);
+}
+nav header {
+  font-size: 280%;
+  text-align: center;
+}
+header {
+  font-size: 250%;
+  font-weight: 700;
+  padding-left: 15px;
+}
+p {
+  margin-bottom: 10px;
+  padding: 5px 20px;
+  line-height: 1.2;
+  font-size: 150%;
+}
+code {
+  display: block;
+  white-space: pre-wrap;
+  margin: 0 15px 10px;
+  padding: 5px 20px;
+  line-height: 1.5;
+  font-size: 120%;
+  background-color: var(--background-code);
+}
+
+@media (min-width: 900px) {
+  
+  body {
+    grid-template-columns: auto;
+  }
+  nav {
+    position: fixed;
+    max-width: 25%;
+  }
+  nav ul {
+    height: auto;
+  }
+  main {
+    margin-top: 25px;
+    margin-left: 30%;
+  }
+}
